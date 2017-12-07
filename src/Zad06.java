@@ -24,5 +24,7 @@ public class Zad06 {
                 }
             }
         } while (condition);
+
+        scan.close();
     }
 }
