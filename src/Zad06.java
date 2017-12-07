@@ -15,13 +15,11 @@ public class Zad06 {
                 System.out.println("Podana liczba jest za mała");
             } else if (i > 200) {
                 System.out.println("Podana liczba jest za duża");
-            } else if (i >= 100 && i <= 200) {
-                if (i % 3 == 0) {
+            } else if (i % 3 == 0) {
                     System.out.println("Twoja liczba jest ok");
-                    break;
-                } else {
-                    System.out.println("Liczba nie jest podzielna przez 3");
-                }
+                    condition = false;
+            } else {
+                System.out.println("Liczba nie jest podzielna przez 3");
             }
         } while (condition);
 
